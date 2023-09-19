@@ -3,6 +3,7 @@
   height: 91vh;
   width: 100px;
   color: white;
+  z-index: 0;
 }
 
 .home-card {
