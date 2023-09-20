@@ -7,28 +7,33 @@ import ruby from "../../assets/ruby.svg"
 import rails from "../../assets/rails.svg"
 import react from "../../assets/react.svg"
 import "animate.css"
+import { motion } from "framer-motion"
 
 export default function Bio() {
 
   return (
 
-      <div className="bio" id="bio">
-        <div className="bio-content" >
-          <h1>Qui suis-je ?</h1>
-          <p>Développeur front-end junior, je suis passioné par le développement web et par la création.</p>
-          <p>Mes éxpériences passées m'ont permis de maîtriser différents langages comme ces derniers : </p>
-          <div className="logo">
-            <img src={html} alt="html" id="html"/>
-            <img src={css} alt="css" id="css" />
-            <img src={js} alt="js" id="js"/>
-            <img src={ruby} alt="ruby" id="ruby" />
-            <img src={rails} alt="rails" id="rails" />
-            <img src={react} alt="react" id="react"/>
+    <motion.div className="bio" id="bio"
+    initial={{opacity:0, scale:0}}
+    whileInView={{opacity:1, scale:1}}
+    transition={{duration:0.6}}
+    >
+      {/* <div className="bio" id="bio"> */}
+
+          <div className="bio-content" >
+            <h1>Qui suis-je ?</h1>
+            <p>Développeur front-end junior, je suis passioné par le développement web et par la création.</p>
+            <p>Mes éxpériences passées m'ont permis de maîtriser différents langages comme ces derniers : </p>
+            <div className="logo">
+              <img src={html} alt="html" id="html"/>
+              <img src={css} alt="css" id="css" />
+              <img src={js} alt="js" id="js"/>
+              <img src={ruby} alt="ruby" id="ruby" />
+              <img src={rails} alt="rails" id="rails" />
+              <img src={react} alt="react" id="react"/>
+            </div>
           </div>
-        </div>
-      </div>
-
-
-
+      {/* </div> */}
+    </motion.div>
   )
 }
