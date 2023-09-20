@@ -1,4 +1,5 @@
 import "./Header.css"
+import {Link} from "react-scroll"
 
 export default function Header() {
   return (
@@ -6,10 +7,10 @@ export default function Header() {
       <span>Quentin Ribardière</span>
       <nav>
         <ul>
-          <a href="#">Home</a>
-          <a href="#">Qui suis-je ?</a>
-          <a href="#">Projets</a>
-          <a href="#">Contact</a>
+        <Link activeClass="active" to="home" spy={true} smooth={true} offset={-100} duration={600}>Home</Link>
+        <Link activeClass="active" to="bio" spy={true} smooth={true} offset={-100} duration={600}>Qui suis-je ?</Link>
+        <Link activeClass="active" to="projet" spy={true} smooth={true} offset={50} duration={600}>Projets</Link>
+        <Link activeClass="active" to="contact" spy={true} smooth={true} offset={50} duration={600}>Contact</Link>
         </ul>
       </nav>
     </header>

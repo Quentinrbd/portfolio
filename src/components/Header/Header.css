@@ -21,4 +21,9 @@
   padding: 9px;
   text-decoration: none;
   color: white;
+  cursor: pointer;
+}
+
+.header a:hover {
+  border-bottom: 1px solid #ECB365;
 }
