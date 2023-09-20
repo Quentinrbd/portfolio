@@ -13,12 +13,12 @@ export default function Bio() {
 
   return (
 
-    <motion.div className="bio" id="bio"
+    <motion.div
     initial={{opacity:0, scale:0}}
     whileInView={{opacity:1, scale:1}}
     transition={{duration:0.6}}
     >
-      {/* <div className="bio" id="bio"> */}
+      <div className="bio" id="bio">
 
           <div className="bio-content" >
             <h1>Qui suis-je ?</h1>
@@ -33,7 +33,7 @@ export default function Bio() {
               <img src={react} alt="react" id="react"/>
             </div>
           </div>
-      {/* </div> */}
+      </div>
     </motion.div>
   )
 }

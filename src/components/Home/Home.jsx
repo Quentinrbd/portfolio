@@ -6,11 +6,13 @@ import { motion } from "framer-motion"
 export default function Home() {
   return (
     <motion.div
-    className='home'
-    id="home"
     initial={{opacity:0}}
     whileInView={{opacity:1}}
-    transition={{duration:0.6}}
+    transition={{
+      ease: "linear",
+      duration: 2,
+      x: { duration: 1 }
+    }}
     >
       <div className="home" id="home">
         <div className='home-card'>
@@ -19,7 +21,12 @@ export default function Home() {
             <h3>Bienvenue sur mon portfolio !</h3>
           </div>
           <div className='right-side'>
+            <motion.div
+            whileHover={{ scale: 1.1 }}
+            transition={{duration:0.5}}
+            >
             <img src={Image} alt="" />
+            </motion.div>
           </div>
         </div>
       </div>
