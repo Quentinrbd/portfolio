@@ -9,7 +9,7 @@
   align-items: center;
   justify-content: space-between;
   font-size: 17px;
-  border-top: 4px solid #ECB365;
+  border-bottom: 3px solid #ECB365;
   z-index: 1;
 }
 
