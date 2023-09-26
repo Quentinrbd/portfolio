@@ -10,13 +10,13 @@
 
 .projet-content {
   display: grid;
-  grid-template-columns: 1fr 1fr  ;
+  grid-template-columns: 1fr 1fr;
   grid-gap: 16px;
   justify-items: center;
 }
 
 .airbnbrain {
-    background-image: url("../../assets/brain.jpg");
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("../../assets/brain.jpg");
     background-size: cover;
     background-position: center;
     height: 300px;
@@ -28,12 +28,13 @@
     font-size: 24px;
     font-weight: bold;
     text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
-    border-radius: 5px;
+    border-radius: 8px;
     box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    transition: 0.4s;
 }
 
 .smw {
-  background-image: url("../../assets/smw.png");
+  background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("../../assets/smw.png");
   background-size: cover;
   background-position: center;
   height: 300px;
@@ -45,6 +46,13 @@
   font-size: 24px;
   font-weight: bold;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
-  border-radius: 5px;
+  border-radius: 8px;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  transition: 0.4s;
+}
+
+.airbnbrain:hover, .smw:hover {
+  height: 350px;
+  width: 500px;
+  transition: 0.4s;
 }
