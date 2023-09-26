@@ -9,8 +9,8 @@ export default function Header() {
         <ul>
         <Link activeClass="active" to="home" spy={true} smooth={true} offset={-100} duration={600}>Home</Link>
         <Link activeClass="active" to="bio" spy={true} smooth={true} offset={-100} duration={600}>Qui suis-je ?</Link>
-        <Link activeClass="active" to="projet" spy={true} smooth={true} offset={50} duration={600}>Projets</Link>
-        <Link activeClass="active" to="contact" spy={true} smooth={true} offset={50} duration={600}>Contact</Link>
+        <Link activeClass="active" to="projet" spy={true} smooth={true} offset={-100} duration={600}>Projets</Link>
+        <Link activeClass="active" to="contact" spy={true} smooth={true} offset={-100} duration={600}>Contact</Link>
         </ul>
       </nav>
     </header>

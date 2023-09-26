@@ -6,7 +6,7 @@ import js from "../../assets/javascript.svg"
 import ruby from "../../assets/ruby.svg"
 import rails from "../../assets/rails.svg"
 import react from "../../assets/react.svg"
-import me from "../../assets/bio.jpg"
+// import me from "../../assets/bio.jpg"
 
 import { motion } from "framer-motion"
 
@@ -17,12 +17,12 @@ export default function Bio() {
     <motion.div
     initial={{opacity:0, scale:0}}
     whileInView={{opacity:1, scale:1}}
-    transition={{ ease: "linear", duration:0.8}}
+    transition={{ ease: "linear", duration:0.7}}
     >
       <div className="bio" id="bio">
 
           <div className="bio-content" >
-            <motion.div
+            {/* <motion.div
               initial={{opacity:0}}
               whileInView={{opacity:1}}
               transition={{
@@ -32,7 +32,7 @@ export default function Bio() {
               }}
               >
               <img src={me} alt="me" id="me" />
-            </motion.div>
+            </motion.div> */}
             <h1>Qui suis-je ?</h1>
             <p>Développeur front-end junior, je suis passioné par le développement web et par la création.</p>
             <p>Mes éxpériences passées m'ont permis de maîtriser différents langages comme ces derniers : </p>

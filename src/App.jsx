@@ -1,8 +1,7 @@
 import Header from './components/Header/Header'
 import Home from './components/Home/Home'
 import Bio from './components/Bio/Bio'
-// import { motion } from "framer-motion"
-
+import Projet from './components/Projet/Projet'
 
 function App() {
 
@@ -12,6 +11,7 @@ function App() {
       <Header />
       <Home />
       <Bio />
+      <Projet />
     </div>
   )
 }
