@@ -35,7 +35,7 @@ export default function Bio() {
             </motion.div> */}
             <h1>Qui suis-je ?</h1>
             <p>Développeur front-end junior, je suis passioné par le développement web et par la création.</p>
-            <p>Mes éxpériences passées m'ont permis de maîtriser différents langages comme ces derniers : </p>
+            <p>Mes expériences passées m'ont permis de maîtriser différents langages comme ces derniers : </p>
             <div className="logo">
               <img src={html} alt="html" id="html"/>
               <img src={css} alt="css" id="css" />

@@ -56,3 +56,35 @@
   width: 500px;
   transition: 0.4s;
 }
+
+.item {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(29, 91, 206, 0.452);
+}
+
+.modal-brain {
+  padding: 10px;
+  border-radius: 8px;
+  position: relative;
+  background-color: white;
+  width:40%;
+  height: 50%;
+  text-align: center;
+}
+
+.btn {
+  position: absolute;
+  top:1px;
+  right:1px;
+  background-color: rgb(255, 0, 0);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  color: white;
+}
