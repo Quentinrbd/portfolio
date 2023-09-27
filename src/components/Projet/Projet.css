@@ -31,6 +31,7 @@
     border-radius: 8px;
     box-shadow: 0 0 15px rgba(0,0,0,0.2);
     transition: 0.4s;
+    cursor: pointer;
 }
 
 .smw {
@@ -49,6 +50,7 @@
   border-radius: 8px;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
   transition: 0.4s;
+  cursor: pointer;
 }
 
 .airbnbrain:hover, .smw:hover {
@@ -57,34 +59,66 @@
   transition: 0.4s;
 }
 
+/* MODALS */
+
 .item {
   position: fixed;
   inset: 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgba(29, 91, 206, 0.452);
+  background-color: #030303ab;
 }
 
-.modal-brain {
+.modals {
   padding: 10px;
   border-radius: 8px;
   position: relative;
   background-color: white;
-  width:40%;
-  height: 50%;
+  width:60%;
+  height: 55%;
   text-align: center;
+  overflow: scroll ;
+  font-weight: 600;
+  animation: fadeIn;
+  animation-duration: 1s;
+}
+
+.modals::-webkit-scrollbar {
+  display: none;
 }
 
 .btn {
   position: absolute;
-  top:1px;
-  right:1px;
+  padding: 5px;
+  top:3px;
+  right:3px;
   background-color: rgb(255, 0, 0);
-  border-radius: 10px;
+  border-radius: 40%;
   display: flex;
   justify-content: center;
   align-items: center;
   border: none;
   color: white;
+  cursor: pointer;
+}
+
+
+.airbnbrain-img {
+  width: 50%;
+  height: 50%;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+.img-side {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 15px;
+  justify-items: center;
+}
+
+.img-side img {
+  width: 200px;
+  height: 400px;
 }
