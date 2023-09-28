@@ -6,23 +6,27 @@
 }
 
 .bio-content {
-  height: 28vh;
+  height: 31vh;
   width: 120vh;
   font-size: 18px;
   /* position: absolute;
   top: 113vh; */
   background-color: rgb(255, 255, 255);
   border-radius: 8px;
-  transition: 0.2s;
+  transition: 0.3s;
   color: #064663;
   text-align: center;
-  overflow: hidden;
+  overflow: scroll;
   position: absolute;
 }
 
+.bio-content::-webkit-scrollbar {
+  display: none;
+}
+
 .bio-content:hover {
-  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-  transition: 0.2s;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  transition: 0.3s;
 }
 
 .bio-content h1 {
@@ -57,4 +61,25 @@
   position: absolute;
   top: 10px;
   right: 42vh;
+}
+
+.btn-cv {
+  margin-top: 12px;
+}
+
+.cv {
+  text-decoration: none;
+  font-size: 15px;
+  background-color: #064663;
+  border-radius: 8px;
+  padding: 6px 10px;
+  color: white;
+  transition: 0.4s;
+  border-radius: 10px;
+}
+
+.cv:hover {
+  transition: 0.4s;
+  /* background-color: #ECB365; */
+  font-size: 19px;
 }
