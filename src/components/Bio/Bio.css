@@ -1,23 +1,25 @@
 .bio {
   height: 50vh;
-  /* background-color: #06233f; */
-  display: flex;
-  justify-content: center;
-}
+  width: 100vh;
+  /* display: flex;
+  justify-content: center; */
+  /* margin: auto; */
+  }
 
 .bio-content {
-  height: 31vh;
-  width: 120vh;
+  height: 31;
+  width: 80%;
+  padding: 10px;
   font-size: 18px;
-  /* position: absolute;
-  top: 113vh; */
   background-color: rgb(255, 255, 255);
   border-radius: 8px;
   transition: 0.3s;
   color: #064663;
   text-align: center;
   overflow: scroll;
-  position: absolute;
+  /* display: flex;
+  flex-direction: column; */
+  margin: auto;
 }
 
 .bio-content::-webkit-scrollbar {

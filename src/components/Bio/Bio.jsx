@@ -13,13 +13,12 @@ import { motion } from "framer-motion"
 export default function Bio() {
 
   return (
-
-    <motion.div
-    initial={{opacity:0, scale:0}}
-    whileInView={{opacity:1, scale:1}}
-    transition={{ ease: "linear", duration:0.7}}
-    >
-      <div className="bio" id="bio">
+    <div className="bio" id="bio">
+        <motion.div
+        initial={{opacity:0, scale:0}}
+        whileInView={{opacity:1, scale:1}}
+        transition={{ ease: "linear", duration:0.7}}
+        >
 
           <div className="bio-content" >
             <h1>Qui suis-je ?</h1>
@@ -37,7 +36,7 @@ export default function Bio() {
               <a href={cv} type="button" target="_blank" rel="noreferrer" className="cv"><span>CV</span></a>
             </div>
           </div>
-      </div>
     </motion.div>
+      </div>
   )
 }
