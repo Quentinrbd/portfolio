@@ -1,7 +1,7 @@
 .home {
   margin-top: 9vh;
   height: 91vh;
-  width: 100px;
+  width: 100vh;
   color: white;
   z-index: 0;
 }
@@ -10,7 +10,7 @@
   position: absolute;
   top: 32vh;
   display: flex;
-  width: 88vh;
+  width: 88%;
 }
 
 #name {
