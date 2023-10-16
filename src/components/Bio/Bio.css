@@ -1,9 +1,10 @@
 .bio {
   height: 50vh;
+  /* width: 100vw; */
 }
 
 .bio-content {
-  height: 31;
+  height: 31vh;
   width: 80%;
   padding: 10px;
   font-size: 18px;

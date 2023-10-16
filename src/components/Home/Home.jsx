@@ -5,6 +5,7 @@ import { motion } from "framer-motion"
 
 export default function Home() {
   return (
+    <div className="home" id="home">
     <motion.div
     initial={{opacity:0}}
     whileInView={{opacity:1}}
@@ -14,7 +15,6 @@ export default function Home() {
       x: { duration: 1 }
     }}
     >
-      <div className="home" id="home">
         <div className='home-card'>
           <div className='left-side'>
             <h1>Hey ! Ici <span id='name'>Quentin Ribardière</span>, développeur front-end.</h1>
@@ -29,7 +29,7 @@ export default function Home() {
             </motion.div>
           </div>
         </div>
-      </div>
     </motion.div>
+      </div>
   )
 }
