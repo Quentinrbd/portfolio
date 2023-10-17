@@ -1,11 +1,11 @@
 import './Home.css'
-import Image from "../../assets/test-portfolio.jpg"
+// import Image from "../../assets/test-portfolio.jpg"
 import 'animate.css'
 import { motion } from "framer-motion"
 
 export default function Home() {
   return (
-    <div className="home" id="home">
+    <div className="home">
     <motion.div
     initial={{opacity:0}}
     whileInView={{opacity:1}}
@@ -25,7 +25,7 @@ export default function Home() {
             whileHover={{ scale: 1.1 }}
             transition={{duration:0.5}}
             >
-            <img src={Image} alt="" />
+            {/* <img src={Image} alt="" /> */}
             </motion.div>
           </div>
         </div>

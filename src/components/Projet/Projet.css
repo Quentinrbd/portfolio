@@ -22,7 +22,7 @@
     background-size: cover;
     background-position: center;
     height: 300px;
-    width: 450px;
+    width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -41,7 +41,7 @@
   background-size: cover;
   background-position: center;
   height: 300px;
-  width: 450px;
+  width: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
