@@ -1,5 +1,5 @@
 import './Home.css'
-import Image from "../../assets/test-portfolio.jpg"
+// import Image from "../../assets/test-portfolio.jpg"
 import 'animate.css'
 import { motion } from "framer-motion"
 
