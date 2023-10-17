@@ -2,11 +2,11 @@
 
 :root {
   font-family: 'Urbanist', sans-serif;
-  width: 100vmax;
+  width: 110vmax;
 }
 
 html {
-width: 100vmax;
+/* width: 100vmax; */
 }
 
 body {
