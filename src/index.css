@@ -2,17 +2,18 @@
 
 :root {
   font-family: 'Urbanist', sans-serif;
-  width: 110vmax;
+  min-width: 100vh;
+  margin: 0;
+  padding: 0;
 }
 
 html {
-/* width: 100vmax; */
+  /* width: 100%; */
 }
 
 body {
   margin: 0;
   background-color: #041C32;
-
 }
 
 ::-webkit-scrollbar-track
