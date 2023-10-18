@@ -11,7 +11,7 @@ export default function Home() {
     whileInView={{opacity:1}}
     transition={{
       ease: "linear",
-      duration: 2,
+      duration: 1,
       x: { duration: 1 }
     }}
     >
@@ -20,14 +20,14 @@ export default function Home() {
             <h1>Hey ! Ici <span id='name'>Quentin Ribardière</span>, développeur front-end.</h1>
             <h3>Bienvenue sur mon portfolio !</h3>
           </div>
-          {/* <div className='right-side'>
-            <motion.div
+          <div className='right-side'>
+            <motion.div className='right-side'
             whileHover={{ scale: 1.1 }}
             transition={{duration:0.5}}
             >
             <img src={Image} alt="" />
             </motion.div>
-          </div> */}
+          </div>
         </div>
     </motion.div>
       </div>

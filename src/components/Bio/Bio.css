@@ -17,6 +17,12 @@
   margin: auto;
 }
 
+@media (max-width: 800px) {
+  .bio-content {
+    font-size: 18px;
+  }
+}
+
 .bio-content::-webkit-scrollbar {
   display: none;
 }
