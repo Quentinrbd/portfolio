@@ -2,18 +2,16 @@
 
 :root {
   font-family: 'Urbanist', sans-serif;
-  min-width: 100vh;
-  margin: 0;
-  padding: 0;
-}
-
-html {
-  /* width: 100%; */
 }
 
 body {
-  margin: 0;
+  /* width: 200%; */
   background-color: #041C32;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
 }
 
 ::-webkit-scrollbar-track
@@ -35,3 +33,9 @@ body {
 	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
 	background-color: #161616;
 }
+
+/* @media (max-width: 768px) {
+  body {
+    width: 100%;
+  }
+} */
