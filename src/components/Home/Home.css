@@ -1,6 +1,6 @@
 .home {
-  margin-top: 9vh;
-  height: 91vh;
+  /* margin-top: 2px; */
+  height: 100vh;
   /* width: 100%; */
   color: white;
   z-index: 0;
@@ -8,9 +8,10 @@
 
 .home-card {
   position: absolute;
-  top: 32vh;
+  top: 250px;
   display: flex;
-  width: 88%;
+  width: 100%;
+  align-items: center;
 }
 
 #name {
@@ -18,7 +19,7 @@
 }
 
 .left-side {
-  width: 60%;
+  width: 70%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -27,13 +28,12 @@
 }
 
 .right-side {
-  width: 40%;
-  padding-left: 58px;
+  padding-right: 35px;
 }
 
 .right-side img {
-  width: 580px;
-  height: 380px;
+  width:500px;
+  height: 300px;
   border-radius: 8px;
 }
 
@@ -42,9 +42,34 @@ h3 {
   top: -24px;
 }
 
-/* @media (max-width: 600px) {
-  .right-side img  {
-    width: 380px;
-    height: 250px;
+@media (max-width: 800px) {
+  .home-card  {
+    flex-direction: column;
   }
-} */
+}
+
+@media (max-width: 600px) {
+  .right-side img{
+    width:250px;
+    height: 180px;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 800px) {
+  .right-side img{
+    width:400px;
+    height: 280px;
+  }
+}
+
+@media (max-width: 800px) {
+  .right-side {
+    padding: 0;
+  }
+}
+
+@media (max-width: 800px) {
+  .home-card {
+    top: 150px;
+  }
+}
