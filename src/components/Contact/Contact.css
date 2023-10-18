@@ -1,11 +1,12 @@
 .contact {
-  height: 18vh;
+  height: 150px;
   border-top: 1px solid #ECB365;
 }
 
 .contact-content {
   color: white;
   text-align: center;
+  margin-top: 15px;
 }
 
 .contact-content span{

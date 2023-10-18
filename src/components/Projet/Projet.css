@@ -84,6 +84,7 @@
   font-weight: 600;
   animation: fadeIn;
   animation-duration: 1s;
+  z-index: 2;
 }
 
 @media (max-width: 600px) {
