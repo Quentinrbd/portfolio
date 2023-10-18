@@ -10,6 +10,19 @@
   z-index: 1;
 }
 
+@media (max-width: 380px) {
+  .header {
+  font-size: 9px;
+  }
+}
+
+
+@media (min-width: 381px) and (max-width: 800px) {
+  .header {
+  font-size: 12px;
+  }
+}
+
 nav {
   display: flex;
   justify-content: space-between;
