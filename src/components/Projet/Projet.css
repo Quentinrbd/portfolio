@@ -55,10 +55,18 @@
   cursor: pointer;
 }
 
-.airbnbrain:hover, .smw:hover {
+/* .airbnbrain:hover, .smw:hover {
   height: 350px;
   width: 500px;
   transition: 0.4s;
+} */
+
+@media (min-width: 1000px) {
+  .airbnbrain:hover, .smw:hover  {
+    height: 350px;
+    width: 500px;
+    transition: 0.4s;
+  }
 }
 
 /* MODALS */
@@ -78,23 +86,22 @@
   position: relative;
   background-color: white;
   width:1200px;
-  height:600px;
+  height:520px;
   text-align: center;
   overflow: scroll ;
   font-weight: 600;
   animation: fadeIn;
-  animation-duration: 1s;
+  animation-duration: 0,4s;
   z-index: 2;
 }
 
 @media (max-width: 600px) {
   .modals  {
-    width: 700px;
-    height: 1500px;
-    font-size: 25px;
+    width: 350px;
+    height: 550px;
+    font-size: 14px;
   }
 }
-
 
 .modals::-webkit-scrollbar {
   display: none;
@@ -125,8 +132,8 @@
 
 @media (max-width: 600px) {
   .airbnbrain-img  {
-    width: 670px;
-    height: 384px;
+    width: 340px;
+    height: 184px;
   }
 }
 
@@ -135,9 +142,27 @@
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 15px;
   justify-items: center;
+  width: 200px;
+  height: 400px;
+}
+
+@media (max-width: 600px) {
+  .img-side, .img-side img {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 15px;
+  justify-items: center;
+  }
 }
 
 .img-side img {
   width: 200px;
   height: 400px;
+}
+
+@media (max-width: 600px) {
+.img-side img {
+  width: 150px;
+  height: 250px;
+  }
 }

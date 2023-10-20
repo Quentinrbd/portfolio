@@ -17,7 +17,13 @@
   margin: auto;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 400px) {
+  .bio-content {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 401px) and (max-width: 800px) {
   .bio-content {
     font-size: 18px;
   }

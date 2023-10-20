@@ -23,7 +23,7 @@ export default function Bio() {
           <div className="bio-content" >
             <h1>Qui suis-je ?</h1>
             <p>Développeur front-end junior, je suis passioné par le développement web et par la création.</p>
-            <p>Mes expériences passées m'ont permis de maîtriser différents langages comme ces derniers : </p>
+            <p>Diplômé d'un BTS SIO ainsi que d’une certification Concepteur - Développeur d’application web au sein du <a href="https://www.lewagon.com/fr" target="_blank" rel="noreferrer" style={{textDecoration:"none", color:"#ECB365"}}>Wagon</a>, j'ai acquis de nombreuses connaissances sur ces derniers langages.</p>
             <div className="logo">
               <img src={html} alt="html" id="html"/>
               <img src={css} alt="css" id="css" />
