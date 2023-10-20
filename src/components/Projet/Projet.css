@@ -99,7 +99,7 @@
   overflow: scroll ;
   font-weight: 600;
   animation: fadeIn;
-  animation-duration: 0,4s;
+  animation-duration: 0.6s;
   z-index: 2;
 }
 
