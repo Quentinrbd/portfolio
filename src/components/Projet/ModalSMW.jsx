@@ -34,7 +34,7 @@ export default function ModalSMW({closeModal}) {
           <img src={smw6} alt="" />
           <img src={smw4} alt="" />
         </div>
-        <p>Le code de ce projet est disponible sur mon profil <a href="https://github.com/Quentinrbd" target="_blank" rel="noreferrer" style={{textDecoration:"none"}}>GitHub</a>.</p>
+        <p>Le code de ce projet est disponible sur mon profil <a href="https://github.com/Quentinrbd/save_my_wallet" target="_blank" rel="noreferrer" style={{textDecoration:"none"}}>GitHub</a>.</p>
       </div>
     </div>
   )

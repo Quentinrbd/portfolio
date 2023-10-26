@@ -23,7 +23,7 @@ export default function ModalContent({closeModal}) {
         <img className="airbnbrain-img" src={airbnbrain} alt="airbnbrain" />
         <img className="airbnbrain-img" src={airbnbrain2} alt="airbnbrain" />
         <img className="airbnbrain-img" src={airbnbrain3} alt="airbnbrain" />
-        <p>Le code de ce projet est disponible sur mon profil <a href="https://github.com/Quentinrbd" target="_blank" rel="noreferrer" style={{textDecoration:"none"}}>GitHub</a>.</p>
+        <p>Le code de ce projet est disponible sur mon profil <a href="https://github.com/leN43/AirbnBrain" target="_blank" rel="noreferrer" style={{textDecoration:"none"}}>GitHub</a>.</p>
       </div>
     </div>
   )
