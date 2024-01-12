@@ -22,7 +22,8 @@ export default function Bio() {
 
           <div className="bio-content" >
             <h1>Qui suis-je ?</h1>
-            <p>Développeur front-end junior, je suis passioné de technologie et par la création.</p>
+            <p>Quentin Ribardière, 24 ans et développeur front-end junior. Je suis passioné de technologie ainsi par la création.</p>
+            <p>Toujours à la recherche de nouvelles idées, j'allie savoir-faire et créativité pour les mettre en œuvre.</p>
             <p>Diplômé d'un BTS SIO ainsi que d’une certification Concepteur - Développeur d’application web au sein du <a href="https://www.lewagon.com/fr" target="_blank" rel="noreferrer" style={{textDecoration:"none", color:"#ECB365"}}>Wagon</a>,
             j'ai acquis de nombreuses connaissances sur ces langages suivants :</p>
             <div className="logo">
