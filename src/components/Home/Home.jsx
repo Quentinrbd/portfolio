@@ -17,7 +17,7 @@ export default function Home() {
     >
         <div className='home-card'>
           <div className='left-side'>
-            <h1>Je suis <span id='name'>Quentin Ribardière</span>, développeur web.</h1>
+            <h1>Je suis <span id='name'>Quentin Ribardière</span>, développeur front-end.</h1>
             <h3>Bienvenue sur mon portfolio !</h3>
           </div>
           <div className='right-side'>
