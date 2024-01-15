@@ -15,7 +15,7 @@
 @media (max-width: 800px) {
   .home-card  {
     flex-direction: column;
-    top: 150px;
+    top: 220px;
   }
 }
 

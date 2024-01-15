@@ -10,6 +10,24 @@
   margin-bottom: 8vh;
 }
 
+@media (max-width: 400px) {
+  .projet h1 {
+    margin-top: 4vh;
+  }
+}
+
+@media (min-width: 401px) and (max-width: 500px) {
+  .projet h1 {
+    margin-top: 10vh;
+  }
+}
+
+@media (min-width: 501px) {
+  .projet h1 {
+    margin-top: 15vh;
+  }
+}
+
 .projet-content {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -62,7 +80,14 @@
   transition: 0.4s;
 } */
 
-@media (max-width: 600px) {
+@media (min-width: 150px) and (max-width: 305px) {
+  .smw, .airbnbrain {
+    height: 150px;
+    width: 90px;
+  }
+}
+
+@media (min-width: 306px) and (max-width:600px) {
   .smw, .airbnbrain {
     height: 300px;
     width: 150px;
