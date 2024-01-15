@@ -87,7 +87,7 @@
   }
 }
 
-@media (min-width: 306px) and (max-width:600px) {
+@media (min-width: 301px) and (max-width:600px) {
   .smw, .airbnbrain {
     height: 300px;
     width: 150px;
