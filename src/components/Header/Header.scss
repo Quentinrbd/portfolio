@@ -1,0 +1,154 @@
+.header {
+  /* position: fixed; */
+  // height: 10vh;
+  width: 100%;
+  background-color: #0d141f00;
+  color: white;
+  border-bottom: 2px solid #ECB365;
+  z-index: 1;
+}
+
+@media (max-width: 380px) {
+  .header {
+  font-size: 10px;
+  }
+}
+
+@media (min-width: 381px) and (max-width: 800px) {
+  .header {
+  font-size: 12px;
+  }
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 30px;
+}
+
+.nav {
+  display: flex;
+  margin: auto;
+}
+
+.header span {
+  margin-left: 5px;
+}
+
+.header a {
+  padding: 9px;
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+  font-size: 2.2vh;
+}
+
+.header a:hover {
+  color: #ECB365;
+}
+
+.nav-mobile {
+  position: absolute;
+  top: 100px;
+  opacity: 0;
+}
+
+#dispo {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+  right: 25px;
+  background-color: #0d141f67;
+  border: 1px solid rgb(61, 61, 61);
+  color: white;
+  padding: 3px 20px;
+  border-radius: 12px;
+  cursor: pointer;
+  top: 3.2%;
+
+  span {
+    font-size: 1.4vh;
+  }
+
+  #green {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: green;
+    margin-right: 8px;
+  }
+
+  #pulse {
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: green;
+    margin-right: 8px;
+    animation: ping 1.5s cubic-bezier(0,0,.2,1) infinite;
+  }
+}
+
+.nav-mobile #dispo {
+  display: none;
+}
+
+@media (orientation: portrait) {
+  .nav {
+    position: absolute;
+    opacity: 0;
+  }
+
+  .nav-mobile {
+    position: relative;
+    opacity: 1;
+    display: flex;    
+    top: 0;
+  }
+
+  .bg {
+    display: flex;
+    background-color: #112840;
+    border-radius: 50px;
+    padding: 4px 10px;
+
+    a {
+      background-color: rgb(255, 255, 255);
+      border-radius: 50%;
+      margin: 5px;
+      position: relative;
+      width: 30px !important;
+      height: 30px !important;
+    }
+    svg {
+      font-size: 25px;
+      color: #154467;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  .header {
+    border-bottom: none;
+
+    a:hover {
+      border-bottom: none;
+    }
+  }
+}
+
+@keyframes ping {
+  75% {
+    transform: scale(4);
+    opacity: 0;
+  }
+
+  100% {
+    transform: scale(6);
+    opacity: 0;
+  }
+}

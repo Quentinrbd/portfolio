@@ -1,0 +1,100 @@
+.contact {
+    height: fit-content;
+    margin: 0px 100px 0px 100px;
+    position: relative;
+
+    hr {
+        width: 100px;
+        position: absolute;
+        left: 100px;
+        top: 6vh;
+        border: 1px solid #ECB365;
+    }
+    
+    h1 {
+        padding-left: 100px;
+        position: relative;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        margin-left: 150px;
+
+        input {
+            width: 250px;
+            height: 33px;
+            margin-top: 20px;
+            border-radius: 10px;
+            padding: 8px;
+            background-color: #0D141F;
+            color: white;
+            border: 1px solid white;
+        }
+
+        textarea {
+            width: 300px;
+            height: 90px;
+            background-color: #0D141F;
+            border-radius: 10px;
+            margin-top: 20px;
+            color: white;
+            border: 1px solid white;
+            padding: 8px;
+        }
+
+        button {
+            width: 100px;
+            margin-top: 15px;
+            background-color: #ECB365;
+            border: none;
+            padding: 8px;
+            color:white;
+            border-radius: 10px;
+            margin-bottom: 25px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #e9a240;
+        }
+
+        .error {
+            color: #E5484D;
+            font-size: 1.8vh;
+            margin-top: 6px;
+        }
+    }
+}
+
+@media (max-width: 960px) {
+    .contact {
+        margin: 0 !important;
+        height: fit-content;
+    }
+
+    hr {
+        visibility: hidden;
+    }
+
+    h1 {
+        padding-left: 0 !important;
+        text-align: center;
+        color: #ECB365;
+    }
+
+    form {
+        margin-left: 0 !important;
+        align-items: center;
+    }
+
+    input {
+        width: 200px !important;
+        height: 25px !important;
+    }
+
+    textarea {
+        width: 250px !important;
+        height: 70px !important;
+    }
+}

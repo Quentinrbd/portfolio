@@ -1,0 +1,59 @@
+.bio {
+    height: fit-content;
+    margin: 0px 100px 50px 100px;
+    position: relative;
+
+    hr {
+        width: 140px;
+        position: absolute;
+        left: 100px;
+        top: 6vh;
+        border: 1px solid #ECB365;
+    }
+
+    h1 {
+        color: white;
+        margin-bottom: 8vh;
+        padding-left: 100px;
+        z-index: 1;
+    }
+    .info {
+        display: flex;
+        justify-content: space-around;
+    }
+
+
+    .fullstack {
+        margin-left: 30px;
+        text-align: center;
+
+        .front-back {
+            display: flex;
+            justify-content: space-around;
+            
+            ul {
+                list-style: none;
+            }
+        }
+    }
+}
+
+@media (orientation: portrait) {
+    .bio {
+        margin: 0 !important;
+        padding: 50px;
+        height: fit-content;
+
+        h1 {
+            text-align: center;
+            padding-left: 0;
+            margin-bottom: 0;
+            color: #ECB365;
+        }
+    }
+
+    .info, .fullstack {
+        display: initial !important;
+        text-align: center;
+    }
+}
