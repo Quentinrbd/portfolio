@@ -50,22 +50,24 @@
 
 .projetCard {
   background: linear-gradient(30deg, #112840, #0D141F);
-  // background-color: white;
-  width: fit-content;
-  height: fit-content;
+  width: 65%;
+  // height: fit-content;
   min-width: 300px;
   color: white;
   border-radius: 25px;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
   position: relative;
-  text-align: center;
   margin: 10px;
   padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+
 
   img {
-    text-align: center;
+    // text-align: center;
     width: 90%;
-    // margin: 5px;
     height: 200px;
     filter: opacity(75%);
     border-radius: 50px ;
@@ -74,11 +76,12 @@
 
   .projet-content {
     padding:  0 10px 0 10px;
-    // margin: 0;
 
     p {
       font-size: 2.6vh;
       margin: 0;
+      // max-width: 300px;
+      text-align: center;
     }
 
     #desc {
@@ -91,8 +94,6 @@
     list-style: none; 
     display: flex;
     justify-content: space-evenly;
-    // width: 100%;
-    // margin-top: 10px;
     padding: 0;
 
     li {
@@ -103,7 +104,6 @@
       border-radius: 50px;
       margin-bottom: 58px;
       margin-right: 5px;
-      // font-size: 2.2vh;
     }
   }
 
@@ -141,10 +141,15 @@
   margin-top: 8vh;
 }
 
+@media (orientation: portrait ) {
+  .projetCard {
+    width: 80% !important;
+  }
+}
 
 @media (min-width: 150px) and (max-width: 399px) {
   .projetCard {
-    max-width: 250px !important;
+    // max-width: 250px !important;
 
     img {
       height: 150px !important;
@@ -154,18 +159,13 @@
 
 @media (min-width: 400px) and (max-width:749px) {
   .projetCard {
-    width: 350px !important;
+    // width: 350px !important;
 
 
     img {
       width: 240px !important;
       height: 120px !important;
     }
-
-    // button {
-    //   top: 84% !important;
-    //   padding: 3px 10px;
-    // }
   }
 }
 
@@ -173,10 +173,6 @@
   .projetCard {
     // height: 540px !important;
     width: 600px !important;
-
-    // button {
-    //   top: 86% !important;
-    // }
 
     span {
       display: block;
@@ -217,7 +213,7 @@
 
 @media (min-width: 1600px) and (max-width: 2800px) {
   .projetCard {
-    width: 800px !important;  
+    // width: 800px !important;  
     // height: 500Px !important;
   }
 }
