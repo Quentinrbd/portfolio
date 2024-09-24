@@ -1,4 +1,4 @@
-import Header from "../components/Header/Header"
+import Navbar from "../components/Navbar/Navbar"
 import Home from "../components/Home/Home"
 import Propos from "../components/Propos/Propos"
 import Service from "../components/Service/Service"
@@ -11,7 +11,7 @@ export default function All() {
   scrollTop(0,0)
   return (
     <>
-        <Header />   
+        {/* <Navbar />     */}
         <Home />
         <Propos/>
         <Service/>

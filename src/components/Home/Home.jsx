@@ -1,6 +1,6 @@
 import './Home.scss'
+// import home2 from '../../assets/home2.png'
 import home from '../../assets/home.jpg'
-import home2 from '../../assets/home2.png'
 import 'animate.css'
 import { motion } from "framer-motion"
 
@@ -26,14 +26,14 @@ export default function Home() {
   return (
     <div className="home">
       <div className="text">
-        <h1 style={{color: '#ECB365'}}>Quentin Ribardière</h1>
-        <h2>Développeur front-end.</h2>
+        <h1 style={{color: '#3A5780'}}>Quentin Ribardière</h1>
+        <h2>Développeur front-end</h2>
       </div>
 
 
       <div className="content">
         <div className="content-left">
-        <h3 style={{color: '#ECB365'}}>Stack technique</h3>
+        <h3 style={{color: '#3A5780'}}>Stack technique</h3>
             <div className="stack">
               <div className="js">
                 <p><img src={js} alt="" /> </p>
@@ -47,18 +47,14 @@ export default function Home() {
           </div>
         </div>
 
-        <motion.div
-        initial={{opacity:0}}
-        animate={{opacity:1}}
-        transition={{duration:1.5}}
-        className='photo'
-        >
-        <img src={home2} alt="photo home" id='img-home'/>
+        <div className="photo">
+          <img src={home} alt="photo home" id='img-home'/>
+        </div>
 
-        </motion.div>
+
 
         <div className="content-right">
-          <h3 style={{color: '#ECB365'}}>Me contacter</h3>
+          <h3 style={{color: '#3A5780'}}>Me contacter</h3>
           <div className='contact-1'>
             <a href="https://github.com/Quentinrbd" target='_blank'> <FontAwesomeIcon icon={faGithub}/> Github </a>
             <a href="https://www.linkedin.com/in/quentin-ribardi%C3%A8re-63139b238/" target='_blank'> <FontAwesomeIcon icon={faLinkedin} /> Linkedin </a>
