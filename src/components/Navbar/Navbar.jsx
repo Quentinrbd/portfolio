@@ -1,4 +1,4 @@
-import "./Header.scss"
+import "./Navbar.scss"
 import {Link} from "react-scroll"
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -10,7 +10,7 @@ import { faMessage } from '@fortawesome/free-solid-svg-icons'
 
 
 
-export default function Header() {
+export default function Navbar() {
   return (
     <header className="header">
       <nav>

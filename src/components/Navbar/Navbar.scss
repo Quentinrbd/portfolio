@@ -2,9 +2,9 @@
   /* position: fixed; */
   // height: 10vh;
   width: 100%;
-  background-color: #0d141f00;
-  color: white;
-  border-bottom: 2px solid #ECB365;
+  // background-color: #0d141f00;
+  color: #494242;
+  border-bottom: 2px solid #3A5780;
   z-index: 1;
 }
 
@@ -39,9 +39,9 @@ nav {
 .header a {
   padding: 9px;
   text-decoration: none;
-  color: white;
+  color: black;
   cursor: pointer;
-  font-size: 2.2vh;
+  font-size: 2.5vh;
 }
 
 .header a:hover {
@@ -60,7 +60,7 @@ nav {
   align-items: center;
   margin-right: auto;
   right: 25px;
-  background-color: #0d141f67;
+  background-color: #000000b2;
   border: 1px solid rgb(61, 61, 61);
   color: white;
   padding: 3px 20px;
