@@ -11,10 +11,10 @@ export default function All() {
   scrollTop(0,0)
   return (
     <>
-        {/* <Navbar />     */}
+        <Navbar />    
         <Home />
         <Propos/>
-        <Service/>
+        {/* <Service/> */}
         <Projet />
         <Contact /> 
         <Footer />

@@ -1,49 +1,25 @@
 const projetData = [
     {
-        // projet: 'freelance',
-        title: "Boyer Peinture",
-        desc: "Site vitrine Boyer Peinture - 2024",
-        skills: [
-            "React",
-            "Framer Motion",
-            "Figma"
-        ],
+        id: 1,
+        title: "Sitre vitrine Boyer Peinture",
         img:'/boyer.png',
-        link: "https://boyerpeinture.com/"
     },
     {
-        // projet: 'freelance',
-        title: "Escargot Bleu",
+        id: 2,
+        title: "Site ficitif restaurnt l'Escargot Bleu",
         desc: "Site fictif pour un restaurant - 2024",
-        skills: [
-            "React",
-            "Framer Motion",
-            "Figma"
-        ],
         img: "/escargotbleu.png",
-        link: "https://escargot-bleu.netlify.app/"
     },
     {
-        projet: "ecole",
+        id: 3,
         title: "Airbnbrain",
         desc: `Plateforme "Airbnb like" pour louer des cerveaux - 2023`,
-        skills: [
-            "RoR",
-            "Github",
-            "Figma"
-        ],
         img: "/airbnbrain.png"
     },
     {
-        projet: "ecole",
+        id: 4,
         title: "Save My Wallet",
         desc: "Plateforme ludique pour gérer son budget - 2023",
-        skills: [
-            "RoR",
-            "Github",
-            "Figma",
-            "Heroku"
-        ],
         img: "/smw.png"
     },
 ]

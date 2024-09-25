@@ -14,7 +14,7 @@ export default function ModalContent({closeModal}) {
       onClick={e => e.stopPropagation()}>
         <button
         className="btn"
-        onClick={closeModal}
+        onClick={() => closeModal(false)}
         >X</button>
         <h1>Airbnbrain</h1>
         <p>Ce projet a été fait en groupe de 4 lors de ma formation au sein de <a href="https://www.lewagon.com/fr" target="_blank" rel="noreferrer" style={{textDecoration:"none"}}>Le Wagon</a>. <br /> Le but de cette application était de faire un «Airbnb like». </p>

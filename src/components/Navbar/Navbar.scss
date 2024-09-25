@@ -1,12 +1,4 @@
-.header {
-  /* position: fixed; */
-  // height: 10vh;
-  width: 100%;
-  // background-color: #0d141f00;
-  color: #494242;
-  border-bottom: 2px solid #3A5780;
-  z-index: 1;
-}
+
 
 @media (max-width: 380px) {
   .header {
@@ -20,17 +12,17 @@
   }
 }
 
-nav {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px 30px;
+.nav {
+  background-color: #EFEEED;
+  height: 10vh;
+  margin: 0;
+  padding-left: 30px;
+  padding-top: 20px;
+  a {
+    margin: 5px;
+  }
 }
 
-.nav {
-  display: flex;
-  margin: auto;
-}
 
 .header span {
   margin-left: 5px;

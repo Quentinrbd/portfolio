@@ -2,18 +2,92 @@ import './Propos.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGraduationCap } from '@fortawesome/free-solid-svg-icons' 
 import { faAddressCard } from '@fortawesome/free-solid-svg-icons' 
+import { MdOutlineSchool } from "react-icons/md";
+import { FaReact } from "react-icons/fa";
+import { SiRubyonrails } from "react-icons/si";
+import { IoLogoJavascript } from "react-icons/io5";
+import { FaGithub } from "react-icons/fa";
+import { TbBrandFramerMotion } from "react-icons/tb";
+import { FaFigma } from "react-icons/fa";
+import { VscVscode } from "react-icons/vsc";
+import { MdOutlineComputer } from "react-icons/md";
+
 
 import { motion } from "framer-motion"
 
 export default function Propos() {
   return (
-    <motion.div className='bio'
-    initial={{y:400}}
-    whileInView={{y:0}}
-    transition={{ type: "spring", bounce: 0.30, stiffness: 50}}
-    viewport={{ once: true }}
-    >
+    <div className='bio'>
+
       <h1>À propos</h1>
+
+      <p>Hello! 👋 Je m'apelle Quentin et je suis développeur front-end.</p>
+
+      <div className="diplomestack">
+        <div className="exp">
+
+          <div className="free">
+           <MdOutlineComputer />
+            <div className="details">
+              <p>janv. 2024 - aujourd'hui</p>
+              <p>Développeur front-end freelance</p>
+            </div>
+          </div>
+          <div className='wagon'>
+            <MdOutlineSchool />
+            <div className="details">
+              <p>2023</p>
+              <p>Le Wagon - Certification professionelle concepteur d’application web</p>
+            </div>
+          </div>
+
+          <div className='bts'>
+            <MdOutlineSchool />
+            <div className="details">
+              <p>2021</p>
+              <p>BTS SIO (Services Informatiques aux Organisations)</p>
+            </div>
+          </div>
+        </div>
+
+          <div className="stack">
+
+            <div className="language">
+
+              <div className='react'>
+                <FaReact /> 
+              </div>
+
+              <div className="rails">
+                <SiRubyonrails/>
+              </div>
+
+              <div className="js">
+                <IoLogoJavascript />
+              </div>
+            </div>
+
+            <div className="outils">
+              <div className="github">
+                <FaGithub/>                
+              </div>
+
+              <div className="framer">
+                <TbBrandFramerMotion />
+              </div>
+
+              <div className="figma">
+                <FaFigma />
+              </div>
+
+              <div className="vscode">
+                <VscVscode/>
+              </div>
+            </div>        
+
+          </div>
+      </div>
+      {/* <h1>À propos</h1>
       <hr />
       <div className="info">
         <div className='apropos'>
@@ -61,7 +135,7 @@ export default function Propos() {
           </div>    
 
         </div>
-      </div>
-    </motion.div>
+      </div> */}
+    </div>
   )
 }

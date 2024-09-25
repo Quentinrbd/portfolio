@@ -25,49 +25,30 @@ export default function Home() {
   
   return (
     <div className="home">
-      <div className="text">
-        <h1 style={{color: '#3A5780'}}>Quentin Ribardière</h1>
-        <h2>Développeur front-end</h2>
-      </div>
 
+      <div className="window">
+        <div className="content">
+          <div className="left-content">
+            <img src={home} alt="" />
+            <h1>Quentin Ribardière</h1>
+          </div>
 
-      <div className="content">
-        <div className="content-left">
-        <h3 style={{color: '#3A5780'}}>Stack technique</h3>
-            <div className="stack">
-              <div className="js">
-                <p><img src={js} alt="" /> </p>
-              </div>            
-              <div className="react">
-                <p><img src={react} alt="" /></p>
-              </div>              
-              <div className="rails">
-                <p><img src={ruby} alt="" /></p>
-              </div>
+          <div className="right-content">
+            <p>
+              Développeur <span style={{color: '#3A5780'}}>front-end</span> passionné, pour moi le développement web est un mélange d'<span style={{color: '#3A5780'}}>art</span> et de <span style={{color: '#3A5780'}}>logique</span>.
+            </p>
+
+            <div className="buttons">
+              <button>à propos</button>
+              <button>mes réalisations</button>
+            </div>
           </div>
         </div>
 
-        <div className="photo">
-          <img src={home} alt="photo home" id='img-home'/>
-        </div>
 
-
-
-        <div className="content-right">
-          <h3 style={{color: '#3A5780'}}>Me contacter</h3>
-          <div className='contact-1'>
-            <a href="https://github.com/Quentinrbd" target='_blank'> <FontAwesomeIcon icon={faGithub}/> Github </a>
-            <a href="https://www.linkedin.com/in/quentin-ribardi%C3%A8re-63139b238/" target='_blank'> <FontAwesomeIcon icon={faLinkedin} /> Linkedin </a>
-          </div>
-
-          <div className='contact-2'>
-           <a> <FontAwesomeIcon icon={faEnvelope}/> quentinribardiere.dev@gmail.com </a>
-          </div>
-
-        </div>
-      </div>
-        
-        <p id='scroll' onClick={handleClick}>scroll down <FontAwesomeIcon icon={faAnglesDown}  className='animate__animated animate__fadeInUp animate__infinite	infinite animate__slow'/></p>
+      </div>    
+      
     </div>
+     
   )
 }

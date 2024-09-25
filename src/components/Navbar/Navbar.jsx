@@ -19,12 +19,6 @@ export default function Navbar() {
           <Link activeClass="active" to="service" spy={true} smooth={true} duration={600}>Mes services</Link>
           <Link activeClass="active" to="projet" spy={true} smooth={true} duration={600}>Projets</Link>
           <Link activeClass="active" to="contact" spy={true} smooth={true} duration={600}>Contact</Link>
-
-        <div id="dispo">
-          <div id="green"></div>
-          <div id="pulse"></div>
-          <span>disponible</span>
-        </div>
         </div>
         
         <div className="nav-mobile">

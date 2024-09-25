@@ -3,59 +3,31 @@ import { useState } from "react"
 import projetData from "../../data/projetData"
 import ProjetCard from "./ProjetCard"
 import { motion } from "framer-motion"
+import boyerpeinture from "../../../src/assets/boyer.png"
 
 
 export default function Projet() {
   return (
-    <motion.div className="projet"
-    initial={{y:400}}
-    whileInView={{y:0}}
-    transition={{ type: "spring", bounce: 0.30, stiffness: 50}}
-    viewport={{ once: true }}>
-      <h1>Projets</h1>
-      <hr />
+   <div className="projets">
+      <h1>Mes réalisations</h1>
 
-      <h2>Freelance</h2>      
+      <div className="project-list">
+        {/* <div className="boyerpeinture">
+          <img src={boyerpeinture} alt="" />
+          <p>Site vitrine Boyer Peinture</p>
+          <span>Voir plus</span>
+        </div> */}
 
-      <div className="freelance">
-
-        <ProjetCard title={projetData[0].title}
-          desc={projetData[0].desc}
-          skills={projetData[0].skills}
-          img={projetData[0].img}
-          link={projetData[0].link}
-        />
-
-        <ProjetCard title={projetData[1].title}
-          desc={projetData[1].desc}
-          skills={projetData[1].skills}
-          img={projetData[1].img}
-          link={projetData[1].link}
-        />
-      </div>
-
-      <h2>Scolaire</h2>
-
-      <div className="ecole">
+        {projetData.map((projet) => 
+          <ProjetCard
+          key={projet.id}
+          title={projet.title}
+          img={projet.img}
+          id={projet.id}
+          />
+        )}
         
-        <ProjetCard title={projetData[2].title}
-            projet={projetData[2].projet}
-            desc={projetData[2].desc}
-            skills={projetData[2].skills}
-            img={projetData[2].img}
-            link={projetData[2].link}
-        />
-
-        <ProjetCard title={projetData[3].title}
-            projet={projetData[3].projet}
-            desc={projetData[3].desc}
-            skills={projetData[3].skills}
-            img={projetData[3].img}
-            link={projetData[3].link}
-        />
       </div>
-
-
-    </motion.div>
+   </div>
   )
 }
