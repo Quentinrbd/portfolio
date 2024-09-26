@@ -1,13 +1,10 @@
 import './Projet.scss'
 import { useState } from "react"
-import { createPortal } from "react-dom"
-import ModalBrain from "./ModalBrain"
-import ModalSMW from "./ModalSMW"
-import projetData from '../../data/projetData'
+import Modal from './Modal'
+import { FaLongArrowAltRight } from "react-icons/fa";
 
-export default function ProjetCard({title, img, id}) {
-  const [showModalBrain, setShowModalBrain] = useState(false)
-  const [showModalSMW, setShowModalSMW] = useState(false)
+export default function ProjetCard({id, title, img, modal, goal, skills, link}) {
+  const [showModal, setShowModal] = useState(false)
 
   return (
     <div className="projetCard">
@@ -15,18 +12,11 @@ export default function ProjetCard({title, img, id}) {
 
         <div className="projet-content">
           <p>{title}</p>
-          <span>voir plus</span>
 
+          <button onClick={() => setShowModal(true)}>Voir plus <FaLongArrowAltRight /></button>
 
-          {id === 1 ? <button onClick={() => setShowModalSMW(true)}>test</button> :''}
-          {id === 2 ? <button onClick={() => setShowModalSMW(true)}>test</button> :''}
-          {id === 3 ? <button onClick={() => setShowModalBrain(true)}>test</button> :''}
-          {id === 4 ? <button onClick={() => setShowModalSMW(true)}>test</button> :''}
+          {showModal && <Modal closeModal={setShowModal} title={title} modal={modal} goal={goal} skills={skills} link={link} id={id}/>}          
 
-          
-
-          {showModalSMW && <ModalSMW closeModal={setShowModalSMW}/>}
-          {showModalBrain && <ModalBrain closeModal={setShowModalBrain}/>}
         </div>
     </div>
   )

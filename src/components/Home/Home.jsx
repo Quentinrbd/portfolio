@@ -35,7 +35,7 @@ export default function Home() {
 
           <div className="right-content">
             <p>
-              Développeur <span style={{color: '#3A5780'}}>front-end</span> passionné, pour moi le développement web est un mélange d'<span style={{color: '#3A5780'}}>art</span> et de <span style={{color: '#3A5780'}}>logique</span>.
+              Développeur <span style={{color: '#3e6cad'}}>front-end</span> passionné, pour moi le développement web est un mélange d'<span style={{color: '#3e6cad'}}>art</span> et de <span style={{color: '#3e6cad'}}>logique</span>.
             </p>
 
             <div className="buttons">

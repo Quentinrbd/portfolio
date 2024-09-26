@@ -1,10 +1,7 @@
 import "./Projet.scss"
-import { useState } from "react"
 import projetData from "../../data/projetData"
 import ProjetCard from "./ProjetCard"
 import { motion } from "framer-motion"
-import boyerpeinture from "../../../src/assets/boyer.png"
-
 
 export default function Projet() {
   return (
@@ -21,9 +18,13 @@ export default function Projet() {
         {projetData.map((projet) => 
           <ProjetCard
           key={projet.id}
+          id={projet.id}
           title={projet.title}
           img={projet.img}
-          id={projet.id}
+          modal={projet.modal}
+          goal={projet.goal}
+          skills={projet.skills}
+          link={projet.link}
           />
         )}
         
