@@ -21,7 +21,7 @@ export default function Propos() {
 
       <h1>À propos</h1>
 
-      <p>Hello! 👋 Je m'apelle Quentin et je suis développeur front-end.</p>
+      {/* <p>Hello! 👋 Je m'apelle Quentin et je suis développeur front-end.</p> */}
 
       <div className="diplomestack">
         <div className="exp">

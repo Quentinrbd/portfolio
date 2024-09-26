@@ -4,16 +4,6 @@ import home from '../../assets/home.jpg'
 import 'animate.css'
 import { motion } from "framer-motion"
 
-import js from '../../assets/js.svg'
-import react from '../../assets/react.svg'
-import ruby from '../../assets/ruby.svg'
-
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
-import { faAnglesDown } from '@fortawesome/free-solid-svg-icons'
-import { faGithub } from '@fortawesome/free-brands-svg-icons'
-import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
-
 
 export default function Home() {
   const handleClick = () => {
@@ -35,7 +25,23 @@ export default function Home() {
 
           <div className="right-content">
             <p>
-              Développeur <span style={{color: '#3e6cad'}}>front-end</span> passionné, pour moi le développement web est un mélange d'<span style={{color: '#3e6cad'}}>art</span> et de <span style={{color: '#3e6cad'}}>logique</span>.
+              Développeur <motion.span 
+              class='motion' 
+              style={{color: '#3e6cad'}}
+              initial={{y:30, opacity:0}}
+              animate={{y:0, opacity:1}}
+              transition={{duration: 0.8}}
+              >front-end</motion.span> passionné, pour moi le développement web est un mélange d'<motion.span 
+              className='motion'
+              style={{color: '#3e6cad'}}
+              initial={{y:30, opacity:0}}
+              animate={{y:0, opacity:1}}
+              transition={{duration: 0.8, delay: 0.2}}>art</motion.span> et de <motion.span  
+              className='motion'
+              style={{color: '#3e6cad'}}
+              initial={{y:30, opacity:0}}
+              animate={{y:0, opacity:1}}
+              transition={{duration: 0.8, delay: 0.4}}>logique</motion.span>.
             </p>
 
             <div className="buttons">

@@ -3,9 +3,6 @@
   background-color: #D9D9D9;
   height: 140vh;
   border-radius: 130px 130px 130px 130px;
-  // display: flex;
-  // flex-direction: column;
-  // align-items: ;
 
   h1 {
     padding-top: 60px;
@@ -28,7 +25,6 @@
   border-radius: 40px;
   padding: 10px;
   display: flex;
-  // justify-content: center;
   flex-direction: column;
 
   img {
@@ -64,243 +60,6 @@
   }
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// .projet {
-//   height: fit-content;
-//   margin: 0px 100px 50px 100px;
-//   position: relative;
-
-//   h1 {
-//     color: white;
-//     margin-bottom: 8vh;
-//     padding-left: 100px;
-//   }
-
-//   h2 {
-//     text-align: center;
-//   }
-
-//   hr {
-//     width: 85px;
-//     position: absolute;
-//     left: 100px;
-//     top: 6vh;
-//     border: 1px solid #ECB365;
-// }
-// }
-
-// @media (max-width: 400px) {
-//   .projet h1 {
-//     margin-top: 4vh;
-//   }
-// }
-
-// @media (min-width: 401px) and (max-width: 500px) {
-//   .projet h1 {
-//     margin-top: 10vh;
-//   }
-// }
-
-// @media (min-width: 501px) {
-//   .projet h1 {
-//     margin-top: 15vh;
-//   }
-// }
-
-// .freelance {
-//   display: grid;
-//   grid-template-columns: 1fr 1fr;
-//   grid-gap: 16px;
-//   justify-items: center;
-//   margin-top: 8vh;
-// }
-
-// .projetCard {
-//   background: linear-gradient(30deg, #112840, #0D141F);
-//   width: 65%;
-//   // height: fit-content;
-//   min-width: 300px;
-//   color: white;
-//   border-radius: 25px;
-//   box-shadow: 0 0 15px rgba(0,0,0,0.2);
-//   position: relative;
-//   margin: 10px;
-//   padding: 15px;
-//   display: flex;
-//   flex-direction: column;
-//   align-items: center;
-
-
-
-//   img {
-//     // text-align: center;
-//     width: 90%;
-//     height: 200px;
-//     filter: opacity(75%);
-//     border-radius: 50px ;
-//     padding: 15px;
-//   }
-
-//   .projet-content {
-//     padding:  0 10px 0 10px;
-
-//     p {
-//       font-size: 2.6vh;
-//       margin: 0;
-//       // max-width: 300px;
-//       text-align: center;
-//     }
-
-//     #desc {
-//       font-size: 2.2vh;
-//       color: rgb(199, 197, 197);
-//     }
-//   }
-
-//   ul {
-//     list-style: none; 
-//     display: flex;
-//     justify-content: space-evenly;
-//     padding: 0;
-
-//     li {
-//       background-color: #154467;
-//       height: fit-content;
-//       width: fit-content;
-//       padding: 2px 10px;
-//       border-radius: 50px;
-//       margin-bottom: 58px;
-//       margin-right: 5px;
-//     }
-//   }
-
-//   button {
-//     background-color: #ECB365;
-//     color: white;
-//     border: none;
-//     height: fit-content;
-//     padding: 3px 18px;
-//     border-radius: 25px;
-//     cursor: pointer;
-//     text-decoration: none;
-//     position: absolute;
-//     top: 85%;
-//     left: 50%;
-//     transform: translate(-50%); 
-//     font-size: 2.6vh;
-      
-//     a {
-//       text-decoration: none;
-//       color: white;
-//     }
-//   }
-
-//   button:hover {
-//     background-color: #e9a240;
-//   }
-// }
-
-// .ecole {
-//   display: grid;
-//   grid-template-columns: 1fr 1fr;
-//   grid-gap: 16px;
-//   justify-items: center;
-//   margin-top: 8vh;
-// }
-
-// @media (orientation: portrait ) {
-//   .projetCard {
-//     width: 80% !important;
-//   }
-// }
-
-// @media (min-width: 150px) and (max-width: 399px) {
-//   .projetCard {
-//     // max-width: 250px !important;
-
-//     img {
-//       height: 150px !important;
-//     }
-// } 
-// }
-
-// @media (min-width: 400px) and (max-width:749px) {
-//   .projetCard {
-//     // width: 350px !important;
-
-
-//     img {
-//       width: 240px !important;
-//       height: 120px !important;
-//     }
-//   }
-// }
-
-// @media (min-width: 750px) and (max-width: 1025px) {
-//   .projetCard {
-//     // height: 540px !important;
-//     width: 600px !important;
-
-//     span {
-//       display: block;
-//     }
-//   }
-// }
-
-
-// @media (max-width: 1100px) {
-//   .projet {
-//     margin: 0 !important;
-//     height: fit-content;
-
-//     h1 {
-//       margin-bottom: 0;
-//       padding-left: 0;
-//       text-align: center;
-//       color: #ECB365;
-//     }
-
-//     .smw {
-//       margin-top: 25px;
-//     }
-//   }
-
-//   .ecole {
-//     display: flex;
-//     flex-direction: column;
-//     align-items: center;
-//   }
-
-//   .freelance {
-//     display: flex;
-//     flex-direction: column !important;
-//     align-items: center;
-//   }
-// }
-
-// @media (min-width: 1600px) and (max-width: 2800px) {
-//   .projetCard {
-//     // width: 800px !important;  
-//     // height: 500Px !important;
-//   }
-// }
 
 /* */
 /* MODALS */
@@ -400,7 +159,6 @@
   padding: 4px 8px;
   top:8px;
   right:20px;
-  // background-color: #D9D9D9;
   background: transparent;
   color: #3e6cad !important;
   font-size: 1.1vw;
