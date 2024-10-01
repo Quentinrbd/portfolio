@@ -231,7 +231,7 @@
   cursor: pointer;
 }
 
-@media(max-width: 380px) {
+@media(max-width: 399px) {
   .modalContent {
     width: 300px !important;
 
@@ -259,41 +259,41 @@
     width: 350px !important;
 
     #title {
-      font-size: 2.6vh;
+      font-size: 5vw !important;
     }
   
     #content, #goal {
-      font-size: 2.2vh !important;
+      font-size: 4vw !important;
     }
 
     li {
-      font-size: 1.8vh;
+      font-size: 3.5vw !important;
     }
   }
 
   .btn {
-    font-size: 1.6vh;
+    font-size: 4vw !important;
   }  
 }
 
-@media (orientation: portrait) and (min-height: 750px) and (max-height: 1200px) {
+@media (orientation: portrait) and (min-height: 1000px) and (max-height: 1400px) {
   .modalContent {
     width: 500px !important;
 
     #title {
-      font-size: 2.6vh;
+      font-size: 2.6vw;
     }
   
     #content, #goal {
-      font-size: 2.2vh !important;
+      font-size: 2.2vw !important;
     }
 
     li {
-      font-size: 1.8vh;
+      font-size: 1.8vw;
     }
   }
 
   .btn {
-    font-size: 1.6vh;
+    font-size: 1.6vw;
   }  
 }

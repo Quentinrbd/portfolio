@@ -20,7 +20,7 @@ export default function Home() {
           <div className="right-content">
             <p>
               Développeur <motion.span 
-              class='motion' 
+              className='motion' 
               style={{color: '#3e6cad'}}
               initial={{y:30, opacity:0}}
               animate={{y:0, opacity:1}}
