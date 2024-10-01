@@ -42,6 +42,8 @@ input, textarea, button {
 	font-family: "Baloo Bhai 2", sans-serif;
 } */
 
-svg {
-	color: #E1D8D0
+:root {
+	--toastify-color-progress-light: #3e6cad;
+	--toastify-text-color-light: #242424;
+
 }

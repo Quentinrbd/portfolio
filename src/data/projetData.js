@@ -45,7 +45,7 @@ const projetData = [
         title: "Save My Wallet",
         img: "/smw.png",
         modal: 'Ce projet a été fait en groupe de 4 lors de ma formation au sein du Wagon.',
-        goal: "Le concept de cette application mobile est de 'gamifier' notre façon de gérer nos dépenses. En d'autres termes, les dépenses saisies dans l'application seront réparties en plusieurs catégories (alimentation, vêtements, etc.), et chaque catégorie donnera naissance à un bâtiment spécifique. Plus vos dépenses dans une catégorie sont importantes, plus le bâtiment associé sera imposant.L'application permet également de visualiser vos dépenses sous forme de graphiques et de participer à des défis pour atteindre de nouveaux objectifs. 🚀",
+        goal: "L'application mobile 'gamifier' la gestion des dépenses. Chaque catégorie (alimentation, vêtements, etc.) correspond à un bâtiment, dont la taille augmente avec les dépenses. Elle offre aussi des graphiques et des défis pour atteindre des objectifs. 🚀",
         skills: [
             "Création d'une maquette sur Figma",
             "Développement de l'application avec Ruby on Rails",

@@ -1,7 +1,6 @@
 import './Projet.scss'
 import { FaLongArrowAltRight } from "react-icons/fa";
 
-
 export default function Modal({id, closeModal, title, modal, goal, skills, link}) {
   function projet() {
     if (link != '') {
@@ -13,13 +12,12 @@ export default function Modal({id, closeModal, title, modal, goal, skills, link}
       )
     } else if (id === 3 || 4){
       return (
-        <pdiv></pdiv>
+        <div></div>
       )
     }
   }
   return (
-    <div className='item'
-    onClick={()=> closeModal(false)}>
+    <div div className='item' onClick={()=> closeModal(false)}>
       <div className="modalContent" onClick={e => e.stopPropagation()}>
         <button className='btn' onClick={() => {closeModal(false)}}>x</button>
         <p id='title'>{title}</p>
@@ -31,6 +29,7 @@ export default function Modal({id, closeModal, title, modal, goal, skills, link}
           )}
         </ul>     
           {projet()}
+          
       </div>
     </div>
   )

@@ -2,23 +2,21 @@ import './Contact.scss'
 import emailjs from '@emailjs/browser'
 import {useRef} from 'react'
 import {useForm} from 'react-hook-form'
-import toast, { Toaster } from 'react-hot-toast'
+import { Slide, ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 export default function Contact() {
     const form = useRef()
-
-    const notify = () => toast('Here is your toast.');
-
+    const success = () => toast("Le formulaire a été envoyé.")
     const sendEmail = (formData) => {
         emailjs.send("service_4nvxad7","template_waq0di6", formData, "w9zAHj8StjJ7j4iv-").then(
             (result) => {
                 console.log(result.text)
                 form.current?.reset();
-                toast.success("Le formulaire a été envoyé.")
+                success()
             },
             (error) => {
-                console.log(error.text)
-                toast.error("Le formulaire ne s'est pas envoyé.")
+                console.log(error.text);
             }
         )
     }
@@ -28,9 +26,8 @@ export default function Contact() {
   return (
     <div className="contact">
         <h1>Contact</h1>
-        <hr />
 
-        <form onSubmit={handleSubmit(sendEmail)} ref={form}>
+        <form onSubmit={handleSubmit(sendEmail)} ref={form} id='formContact'>
             <input type="text" placeholder='Nom' id='name' name='user_name'  {... register("name", {required:true, minLength:2})} />
             {errors.name && <p className='error'>Nom de plus de deux caractères obligatoire.</p>}
             <input type="email" placeholder='Email' id='email' name='user_email'  {... register ("email", {pattern: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i, required: true})} />
@@ -39,15 +36,12 @@ export default function Contact() {
             {errors.message && <p className='error'>Message de plus de dix caractères obligatoire.</p>}
             
             <button>Envoyer</button>
-            <Toaster
-             toastOptions={{
-                className: '',
-                style: {
-                    fontFamily: 'Urbanist'
-                },
-              }}/>
         </form>
 
+            <ToastContainer
+                position="top-center"
+                autoClose={6000}
+                transition={Slide}/>
 
     </div>
   )
