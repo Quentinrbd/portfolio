@@ -4,7 +4,7 @@ import './Footer.scss'
 export default function Footer() {
   return (
     <div className='footer'>
-        <p id="copyright">©2024. Tous droits réservés Quentin Ribardière - <Link to='/mentions' style={{color: '#75C7F0'}}>Mentions légales</Link>.</p>
+        <p id="copyright">©2024. Tous droits réservés Quentin Ribardière - <Link to='/mentions' style={{color: '#3e6cad'}}>Mentions légales</Link>.</p>
     </div>
   )
 }

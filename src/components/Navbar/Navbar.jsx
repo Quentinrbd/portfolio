@@ -1,39 +1,44 @@
 import "./Navbar.scss"
 import {Link} from "react-scroll"
-
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faHouse } from '@fortawesome/free-solid-svg-icons'
-import { faUser } from '@fortawesome/free-solid-svg-icons'
-import { faDesktop } from '@fortawesome/free-solid-svg-icons'
-import { faListCheck } from '@fortawesome/free-solid-svg-icons'
-import { faMessage } from '@fortawesome/free-solid-svg-icons'
-
-
+import { Slide, ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 export default function Navbar() {
+  const mail = () => toast("quentinribardiere.dev@gmail.com");
+
   return (
     <header className="header">
       <nav>
         <div className="nav">
-          <Link activeClass="active" to="bio" spy={true} smooth={true} duration={600}>À propros</Link>
-          <Link activeClass="active" to="service" spy={true} smooth={true} duration={600}>Mes services</Link>
-          <Link activeClass="active" to="projet" spy={true} smooth={true} duration={600}>Projets</Link>
-          <Link activeClass="active" to="contact" spy={true} smooth={true} duration={600}>Contact</Link>
+          <div className="link">
+            <Link activeClass="active" to="bio" spy={true} smooth={true} duration={600}>À propros</Link>
+            <Link activeClass="active" to="projets" spy={true} smooth={true} duration={600}>Réalisations</Link>
+            <Link activeClass="active" to="contact" spy={true} smooth={true} duration={600}>Contact</Link>
+          </div>
 
-        <div id="dispo">
-          <div id="green"></div>
-          <div id="pulse"></div>
-          <span>disponible</span>
-        </div>
+          <div></div>
+
+          <div className="reseau">
+            <a href="https://github.com/Quentinrbd" target="_blank">Github</a>
+            <a href="https://www.linkedin.com/in/quentin-ribardi%C3%A8re/" target="_blank">Linkedin</a>
+            <span onClick={mail}>Mail</span>
+            <ToastContainer
+            position="top-center"
+            autoClose={6000}
+            transition={Slide}
+            />
+          </div>
         </div>
         
         <div className="nav-mobile">
-          <div className="bg">
-            <Link activeClass="active" to="bio" spy={true} smooth={true} duration={600}> <FontAwesomeIcon icon={faUser}/> </Link>
-            <Link activeClass="active" to="service" spy={true} smooth={true} duration={600}><FontAwesomeIcon icon={faDesktop}/></Link>
-            <Link activeClass="active" to="projet" spy={true} smooth={true} duration={600}><FontAwesomeIcon icon={faListCheck}/></Link>
-            <Link activeClass="active" to="contact" spy={true} smooth={true} duration={600}><FontAwesomeIcon icon={faMessage}/></Link>
-          </div>
+          <a href="https://github.com/Quentinrbd" target="_blank">Github</a>
+          <a href="https://www.linkedin.com/in/quentin-ribardi%C3%A8re/" target="_blank">Linkedin</a>
+          <span onClick={mail}>Mail</span>
+            <ToastContainer
+            position="top-center"
+            autoClose={6000}
+            transition={Slide}
+            />
         </div>
       </nav>
     </header>

@@ -1,59 +1,244 @@
 .bio {
+    padding: 0 60px 60px 60px;
     height: fit-content;
-    margin: 0px 100px 50px 100px;
-    position: relative;
+}
 
-    hr {
-        width: 140px;
-        position: absolute;
-        left: 100px;
-        top: 6vh;
-        border: 1px solid #ECB365;
+.diplomestack {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: #242424;
+}
+
+.exp {
+    margin-top: 30px;
+    margin-left: 25px;
+}
+
+.wagon, .bts, .free {
+    background-color: #D9D9D9;
+    border: solid 2px #242424;
+    display: flex;
+    align-items: center;
+    width: 560px;
+    padding: 10px 20px;
+    border-radius: 50px;
+
+    svg{
+        color: #242424;
+        font-size: 4.5vh;
+        padding-right: 20px;
     }
 
-    h1 {
-        color: white;
-        margin-bottom: 8vh;
-        padding-left: 100px;
-        z-index: 1;
-    }
-    .info {
-        display: flex;
-        justify-content: space-around;
-    }
-
-
-    .fullstack {
-        margin-left: 30px;
-        text-align: center;
-
-        .front-back {
-            display: flex;
-            justify-content: space-around;
-            
-            ul {
-                list-style: none;
-            }
+    .details {
+        p {
+            margin: 0;
+            padding: 5px;
         }
     }
 }
 
-@media (orientation: portrait) {
-    .bio {
-        margin: 0 !important;
-        padding: 50px;
-        height: fit-content;
+.bts {
+    background-color: #242424;
+    color: #D9D9D9;
+    margin-top: 25px;
 
-        h1 {
-            text-align: center;
-            padding-left: 0;
-            margin-bottom: 0;
-            color: #ECB365;
+    svg {
+        color: #D9D9D9;
+    }
+}
+
+.free {
+    margin-bottom: 25px;
+    background-color: #242424;
+    color: #D9D9D9;
+
+    svg {
+        color: #D9D9D9;
+    }
+}
+
+.stack {
+    width: 500px;
+    margin-top: 30px;
+
+}
+
+.language, .outils {
+    display: flex;
+    gap: 50px;
+}
+
+.outils {
+    margin-top: 50px;
+}
+
+.react, .js, .framer, .vscode{
+    background-color: #D9D9D9;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    animation: float 4s ease-in-out infinite;
+    filter: drop-shadow(-8px 8px 16px rgba(57,61,96,.2));
+
+
+    svg {
+        color: #242424;
+        padding: 15px;
+        font-size: 2.5vw;
+    }
+}
+
+.rails, .github, .figma {
+    background-color: #242424;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    animation: float 4s ease-in-out infinite;
+    animation-delay: 0.2s;
+
+    svg {
+        color: #D9D9D9;
+        padding: 15px;
+        font-size: 2.5vw;
+    }
+
+}
+
+@keyframes float {
+    0% {
+      transform: translatey(0px);
+    }
+    50% {
+      transform: translatey(-15px);
+    }
+    100% {
+      transform: translatey(0px);
+    }
+  }
+
+@media (orientation: portrait) {
+    .diplomestack {
+        flex-direction: column;
+    }
+}
+
+@media (orientation: portrait) and (max-width: 500px) {
+    .exp {
+        margin-left: 0;
+    }
+    
+    .wagon, .bts, .free {
+        width: 300px;
+
+        svg{
+            color: #242424;
         }
     }
 
-    .info, .fullstack {
-        display: initial !important;
-        text-align: center;
+    .bts {
+    
+        svg {
+            color: #D9D9D9;
+            font-size: 5vh;
+        }
+    }
+
+    .wagon {
+        svg {
+            font-size: 7vh;
+        }
+    }
+    
+    .free {
+        margin-bottom: 25px;
+    
+        svg {
+            color: #D9D9D9;
+            font-size: 3vh;
+        }
+    }
+
+    .stack {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 50px;
+        width: 300px;
+    }
+
+    .rails, .github, .figma {    
+        svg {
+            color: #D9D9D9;
+            font-size: 3vh;
+        }    
+    }
+    .react, .js, .framer, .vscode{       
+        svg {
+            color: #242424;
+            font-size: 3vh;
+        }
+    }
+}
+
+@media (min-width: 550px) and (max-width: 1200px) {
+    .exp {
+        margin-left: 0;
+    }
+    
+    .wagon, .bts, .free {
+        width: 520px;
+
+        svg{
+            color: #242424;
+        }
+    }
+
+    .bts {
+    
+        svg {
+            color: #D9D9D9;
+            font-size: 7vw;
+        }
+    }
+
+    .wagon {
+        svg {
+            font-size: 7vw;
+        }
+    }
+    
+    .free {
+        margin-bottom: 25px;
+    
+        svg {
+            color: #D9D9D9;
+            font-size: 6vw;
+        }
+    }
+
+    .stack {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 100px;
+        width: 500px;
+    }
+
+    .rails, .github, .figma {    
+        svg {
+            color: #D9D9D9;
+            font-size: 5vw;
+        }    
+    }
+    .react, .js, .framer, .vscode{       
+        svg {
+            color: #242424;
+            font-size: 5vw;
+        }
     }
 }

@@ -1,43 +1,27 @@
 import './Projet.scss'
 import { useState } from "react"
-import { createPortal } from "react-dom"
-import ModalBrain from "./ModalBrain"
-import ModalSMW from "./ModalSMW"
+import Modal from './Modal'
+import { FaLongArrowAltRight } from "react-icons/fa";
+import { createPortal } from 'react-dom';
+import { motion } from 'framer-motion';
 
-export default function ProjetCard({title, desc, skills, img, link, projet}) {
-  const [showModalBrain, setShowModalBrain] = useState(false)
-  const [showModalSMW, setShowModalSMW] = useState(false)
+export default function ProjetCard({id, title, img, modal, goal, skills, link}) {
+  const [showModal, setShowModal] = useState(false)
 
-  function modal() {
-    if(title === "Airbnbrain") {
-      return (
-        <button onClick={() => setShowModalBrain(true)}><a>En savoir plus !</a></button>
-      )
-    }
-    else if(title === "Save My Wallet") {
-      return (
-        <button onClick={() => setShowModalSMW(true)}><a>En savoir plus !</a></button>
-      )
-    }
-  }
   return (
-    <div className="projetCard">
-            <img src={img} alt="product image" />
+    <motion.div className="projetCard"
+    whileHover={{ scale: 1.05}}
+    transition={{duration:0.2}}>
+        <img src={img} alt="product image" />
 
         <div className="projet-content">
-            <p>{title}</p>
-            <p id='desc'>{desc}</p>
-            <ul>
-            {skills.map(skill => (
-                <li key={skill}>{skill}</li>
-              ))}           
-            </ul>
+          <p>{title}</p>
 
-            {projet === "ecole" ? modal() : <button><a href={link} target="_blank">Visiter le site</a></button>}
+          <button onClick={() => setShowModal(true)}>Voir plus <FaLongArrowAltRight /></button>          
 
-            {showModalBrain && createPortal(<ModalBrain closeModal={() => setShowModalBrain(false)}/>, document.body)}
-            {showModalSMW && createPortal(<ModalSMW closeModal={() => setShowModalSMW(false)}/>, document.body)}
+          {showModal && createPortal(<Modal closeModal={() => setShowModal(false)} title={title} modal={modal} goal={goal} skills={skills} link={link} id={id}/>, document.body)}      
+
         </div>
-    </div>
+    </motion.div>
   )
 }
