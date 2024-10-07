@@ -62,24 +62,18 @@
   }
 }
 
-@media (orientation: portrait) {
-  .project-list {
-    display: flex;
-    flex-direction: column !important;
-    align-items: center;
-  }
-}
 
-@media (max-width: 500px) {
-  .projets {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+@media (max-width: 1100px) {
+  .project-list {
+        display: flex;
+        flex-direction: column !important;
+        align-items: center;
+      }
 
   .projetCard {
-    margin-top: 10px;
+    // margin-top: 10px;
   }
+  
   .projet-content{
     p {
       font-size: 2.2vh !important;
@@ -91,46 +85,46 @@
   }
 }
 
-@media (orientation: portrait) and (min-width:750px) and (min-height: 800px) and (max-height: 1040px) {
+// @media (orientation: portrait) and (min-width:750px) and (min-height: 800px) and (max-height: 1040px) {
 
-  .project-list {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 20px;
-    row-gap: 20px;
-    justify-items: center;
-  }
+//   .project-list {
+//     display: grid;
+//     grid-template-columns: 1fr 1fr;
+//     column-gap: 20px;
+//     row-gap: 20px;
+//     justify-items: center;
+//   }
 
-  .projet-content{
-    p {
-      font-size: 2vh !important;
-    }
+//   .projet-content{
+//     p {
+//       font-size: 2vh !important;
+//     }
 
-    button {
-      font-size: 1.7vh !important;
-    }
-  }
-}
+//     button {
+//       font-size: 1.7vh !important;
+//     }
+//   }
+// }
 
-@media (orientation: portrait) and (min-width:750px) and (min-height: 1041px) and (max-height: 1400px) {
-  .project-list {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 20px;
-    row-gap: 20px;
-    justify-items: center;
-  }
+// @media (orientation: portrait) and (min-width:750px) and (min-height: 1041px) and (max-height: 1400px) {
+//   .project-list {
+//     display: grid;
+//     grid-template-columns: 1fr 1fr;
+//     column-gap: 20px;
+//     row-gap: 20px;
+//     justify-items: center;
+//   }
 
-  .projet-content{
-    p {
-      font-size: 1.6vh !important;
-    }
+//   .projet-content{
+//     p {
+//       font-size: 1.6vh !important;
+//     }
 
-    button {
-      font-size: 1.3vh !important;
-    }
-  }
-}
+//     button {
+//       font-size: 1.3vh !important;
+//     }
+//   }  
+// }
 
 /* */
 /* MODAL */
