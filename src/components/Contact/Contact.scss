@@ -52,13 +52,13 @@
 
         .error {
             color: #3e6cad;
-            font-size: 1.8vh;
+            font-size: 13px;
             margin-top: 6px;
         }
     }
 }
 
-@media (max-width: 960px) {
+@media (max-width: 800px) {
     .contact {
         margin: 0 !important;
         height: fit-content;
